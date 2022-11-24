@@ -1,0 +1,307 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    background: #2A6EAD;
+}
+
+main {
+    padding-bottom: 45px;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .10);
+}
+
+.main-body {
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.modal-content {
+    background-color: #3E4756;
+    color: #FFFFFF;
+}
+
+.modal-header {
+    border-bottom: 1px solid #e6aa29;
+}
+
+.modal-footer {
+    border-top: 1px solid #e6aa29;
+}
+
+.text-highlight {
+    color: #e6aa29;
+}
+
+.carousel-caption {
+    color: #e6aa29;
+}
+
+.profile-img > img {
+    width: inherit;
+    height: inherit;
+}
+
+a{
+    text-decoration: none;
+}
+
+@media (max-width: 767px) {
+    .project-showcase {
+        height: 28vh;
+        background-color: rgba(0,0,0,0.18);
+    }
+
+    .carousel-caption {
+        color: #e6aa29;
+        background: linear-gradient(90deg, transparent 0, rgba(0,0,0,0.7) 10%, rgba(0,0,0,0.7) 90%, transparent 100%);
+    }
+
+    .carousel-item img {
+        object-fit: contain;
+        margin: auto;
+        max-width: 100vw;
+        max-height: 28vh;
+        width: 100%;
+        height: auto;
+    }
+
+    .link-bar {
+        padding: 4px;
+        background-color: #3E4756;
+        height: 50px;
+    }
+
+    .link-img-sm {
+        display: inline;
+        margin: auto;
+        margin-left: 10px;
+        margin-right: 10px;
+        width: auto;
+        height: 42px;
+    }
+
+    .link-img {
+        display: none;
+    }
+
+    .main-body #contactBtn {
+        color: #3E4756;
+        width: 75%;
+        font-size: 26px;
+        font-weight: bold;
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+        background-color: #e6aa29;
+    }
+
+        .main-body #contactBtn:hover {
+            color: #3E4756;
+            background-color: #cf9821;
+        }
+
+    .profile {
+        color: #FFFFFF;
+        text-align: center;
+        position: relative;
+        padding: 10px;
+        padding-top: 55px;
+        border-radius: 30px;
+        margin: auto;
+        margin-top: 75px;
+        width: 90%;
+        min-height: 256px;
+        height: 100%;
+        background-color: rgba(0,0,0,0.2);
+    }
+
+    .profile-img {
+        position: absolute;
+        margin: auto;
+        top: -55px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 110px;
+        height: 110px;
+        border: 3px solid #F6B62B;
+        border-radius: 55px;
+        overflow: hidden;
+    }
+
+    .profile p {
+        margin-top: 10px;
+        font-size: 20px;
+    }
+
+    #infoAccordion{
+        display: none;
+    }
+}
+
+@media (min-width: 768px){
+    .project-showcase {
+        height: calc(100vh - 156px);
+        background-color: rgba(0,0,0,0.18);
+    }
+
+    .carousel-caption {
+        color: #e6aa29;
+        background: linear-gradient(90deg, transparent 0, rgba(0,0,0,0.7) 33%, rgba(0,0,0,0.7) 66%, transparent 100%);
+    }
+
+    .carousel-item img {
+        object-fit: contain;
+        display: !important none;
+        margin: auto;
+        max-width: 100vw;
+        max-height: calc(100vh - 156px);
+        width: 100%;
+        height: auto;
+    }
+
+    .link-bar {
+        padding: 4px;
+        background-color: #3E4756;
+        height: 100px;
+    }
+
+    .link-img-sm {
+        display: none;
+    }
+
+    .link-img {
+        transform: translate(0, 3px);
+        display: inline;
+        margin: auto;
+        margin-left: 20px;
+        margin-right: 20px;
+        width: auto;
+        height: 84px;
+    }
+
+    .main-body {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 9fr 1fr;
+        overflow: auto;
+        margin-top: 0;
+        height: calc(100vh - 145px);
+    }
+
+        .main-body #contactBtn {
+            grid-column-start: 1;
+            grid-column-end: 1;
+            grid-row-start: 2;
+            grid-row-end: 2;
+            color: #3E4756;
+            width: 75%;
+            font-size: 26px;
+            font-weight: bold;
+            display: block;
+            margin: auto;
+            margin-top: 20px;
+            background-color: #e6aa29;
+        }
+
+            .main-body #contactBtn:hover {
+                color: #3E4756;
+                background-color: #cf9821;
+            }
+
+    .profile {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        color: #FFFFFF;
+        text-align: center;
+        position: relative;
+        padding: 10px;
+        padding-top: 110px;
+        border-radius: 30px;
+        margin: auto;
+        margin-top: 135px;
+        width: 90%;
+        min-height: 256px;
+        height: auto;
+        background-color: rgba(0,0,0,0.2);
+    }
+
+    .profile-img {
+        position: absolute;
+        margin: auto;
+        top: -110px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 220px;
+        height: 220px;
+        border: 3px solid #F6B62B;
+        border-radius: 110px;
+        overflow: hidden;
+    }
+
+    .profile-img img {
+        width: 220px;
+        height: auto;
+    }
+
+    .profile p {
+        margin-top: 10px;
+        font-size: 24px;
+    }
+
+    #infoAccordion {
+        margin-top: 135px;
+        display: block;
+    }
+
+    .accordion-item {
+        overflow: hidden;
+        font-size: 20px;
+        background-color: #e6aa29;
+        color: #3E4756;
+    }
+
+    .accordion-button {
+        padding-left: 20px;
+        color: #FFFFFF;
+        font-size: 42px;
+        font-weight: bold;
+        background-color: #3E4756;
+    }
+
+        .accordion-button:hover {
+            padding-left: 30%;
+            transition: 1s;
+        }
+
+        .accordion-button:not(:hover) {
+            padding-left: 20px;
+            transition: 1s;
+        }
+
+        .accordion-button:not(.collapsed) {
+            padding-left: 30%;
+            color: #3E4756;
+            background-color: #e6aa29;
+        }
+
+    code {
+        color: #1751b3;
+    }
+}

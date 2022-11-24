@@ -1,0 +1,116 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="project-showcase container-fluid text-center">
+    <div id="project-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <a href="https://github.com/Hellcat404/RSAMessageServer">
+                    <img src="~/assets/MessageServerProj.png" class="d-block">
+                    <div class="carousel-caption d-block">
+                        <h5>RSA Message Server</h5>
+                        <p>An RSA encrypted message server project.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="carousel-item" data-bs-interval="10000">
+                <a href="https://github.com/Hellcat404/RSAMessageClient">
+                    <img src="~/assets/MessageClientProj.png" class="d-block">
+                    <div class="carousel-caption d-block">
+                        <h5>RSA Message Client</h5>
+                        <p>An RSA encrypted message client project.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#project-carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#project-carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+<div class="link-bar container-fluid text-center box-shadow">
+    <a href="https://github.com/Hellcat404" class="link-img-sm"><img class="link-img-sm" src="~/assets/links/GitHub-sm.png" /></a>
+    <a href="https://www.linkedin.com/in/billyjones132/" class="link-img-sm"><img class="link-img-sm" src="~/assets/links/LinkedIn-sm.png" /></a>
+    <a href="https://github.com/Hellcat404" class="link-img"><img class="link-img" src="~/assets/links/GitHub.png" /></a>
+    <a href="https://www.linkedin.com/in/billyjones132/" class="link-img"><img class="link-img" src="~/assets/links/LinkedIn.png" /></a>
+</div>
+<div class="main-body container-fluid">
+    <div class="profile">
+        <div class="profile-img">
+            <img src="~/assets/profile.png" />
+        </div>
+        <span class="h1" style="font-weight: bold;">Billy Jones</span><br /><br />
+        <span class="h3" style="font-weight: 600; color: #F6B62B;">Skills</span><br />
+        <span class="h3" style="font-weight: 600;">C#&nbsp&nbsp.NET&nbsp&nbspJava&nbsp&nbspLua&nbsp&nbspC++</span><br />
+        <p>
+            I am always excited to learn more languages and develop my skills further.<br/>
+            Client-side and embedded
+            applications are my main interests;
+            I am more than happy to adapt!
+        </p>
+    </div>
+    <button class="btn rounded-pill" id="contactBtn" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Me</button>
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="contactModalLabel">Contact Me</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    The best way to contact me is through my email as I will be able to respond at all times.<br/><br/>
+                    Email: <a href="mailto: billy@billyjones.uk"><strong class="text-highlight">billy@billyjones.uk</strong></a><br/>
+                    Mobile: <a href="tel: +447807269125"><strong class="text-highlight">+44 7807 269125</strong></a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="accordion" id="infoAccordion">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <i data-feather="user" width="48" height="48"></i>&nbspAbout Me
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#infoAccordion">
+                <div class="accordion-body">
+                    I have been studying and developing my programming skills over many years. I started my programming journey at a young age using <code>Java</code>. After learning the basics of programming through online tutorials and trial and error, I began to branch out to other languages such as <code>C#, HTML, CSS and javascript</code>. Once I had learned bits and pieces from these languages, I had developed a good grasp on general programming aspects and concepts. When I got more familiar with programming in general, I began learning by making simple projects and developing my knowledge through the use of programming language <code>documentation</code> and websites such as <code>StackOverflow</code> containing code snippets and adapting this code to fit into my own projects.<br />
+                    In my own time I love to hang out with friends and play all sorts of games - MMOs, RPGs, FPS, Adventure, Puzzle, really anything! I love to tinker with things, look at other peoples' code and fix or modify things for myself and friends.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <i data-feather="monitor" width="48" height="48"></i>&nbspAbout this website
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#infoAccordion">
+                <div class="accordion-body">
+                    This website was created as a personal project to show my ability to adapt to work that I am uncomfortable with. I primarily am comfortable with client side applications and not very comfortable with website design. I think a personal website was a good choice to showcase what I am capable of whilst displaying myself and my skills to the world.<br />This website was created using C#/ASP.NET 6.0 MVC. I created a design for the mobile layout of the site's main page, created it and then worked on a design for the desktop site main page. Through the use of CSS media breakpoints and my designs, I created the website you now see.<br />Please take a look at the mobile and desktop versions of this site and send your feedback to <a href="mailto: billy@billyjones.uk"><code>billy@billyjones.uk</code></a>. I would love to learn how I can improve this site!
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <i data-feather="tool" width="48" height="48"></i>&nbspWhat I am looking for...
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#infoAccordion">
+                <div class="accordion-body">
+                    My main goal is to improve my skills and learn how to be a better programmer.<br/>I am looking for a position as a <code>software engineer/developer</code> primarily working in the backend, on client side or embedded systems. The language that I am most familiar with is <code>C#</code> so a position using this language would suit me, however I am very eager to learn another language if the opportunity presents itself.<br/> If you are a recruiter or hiring member, please click the "<code>Contact Me</code>" button on this page and contact me through one of the methods presented, I would love to hear from you!
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
